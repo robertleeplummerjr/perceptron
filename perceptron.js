@@ -1,5 +1,5 @@
 function Perceptron(opts) {
-  if (this === global) return new Perceptron(opts);
+  if (typeof global !== 'undefined' && this === global) return new Perceptron(opts);
 
   if (!opts) opts = {}
 
