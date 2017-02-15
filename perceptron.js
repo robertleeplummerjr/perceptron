@@ -89,4 +89,6 @@ function Perceptron(opts) {
   return api;
 }
 
-module.exports = Perceptron
+if (typeof module !== 'undefined') {
+  module.exports = Perceptron
+}
